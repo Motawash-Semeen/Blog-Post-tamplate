@@ -8,9 +8,4 @@
     .hamburger div:last-child {
         @apply -rotate-45 -translate-y-1;
     }
-    .btn.btn-search {
-        height: 42px;
-        width: 42px;
-        background: url('../public/assets/images/icon-search.48d1803e.svg') no-repeat 50%;
-    }
 }
