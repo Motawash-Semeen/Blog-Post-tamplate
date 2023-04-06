@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genz-Personal Blog</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</head>
+
+<body class="bg-bg_main">
+    <div class="h-screen bg-gray-50">
+        <header>
+            <div class="relative z-20 border-b bg-white">
+                <div class="px-6 md:px-12 lg:container lg:mx-auto lg:px-6 lg:py-4">
+                    <div class="flex items-center justify-between">
+                        <div class="relative z-20">
+                            <a href="#">
+                                <img src="https://tailus.io/sources/blocks/navigation-layout/preview/images/logo.svg" alt="logo-tailus" class="w-32">
+                            </a>
+                        </div>
+
+                        <div class="flex items-center justify-end border-l lg:border-l-0">
+                            <input type="checkbox" name="hamburger" id="hamburger" class="peer" hidden>
+                            <label for="hamburger" class="peer-checked:hamburger block relative z-20 p-6 -mr-6 cursor-pointer lg:hidden">
+                                <div aria-hidden="true"
+                                    class="m-auto h-0.5 w-6 rounded bg-sky-900 transition duration-300"></div>
+                                <div aria-hidden="true"
+                                    class="m-auto mt-2 h-0.5 w-6 rounded bg-sky-900 transition duration-300"></div>
+                            </label>
+
+                            <div class="peer-checked:translate-x-0 fixed inset-0 w-[calc(100%-4.5rem)] translate-x-[-100%] bg-white border-r shadow-xl transition duration-300 lg:border-r-0 lg:w-auto lg:static lg:shadow-none lg:translate-x-0">
+                                <div class="flex flex-col h-full justify-between lg:items-center lg:flex-row">
+                                    <ul class="px-6 pt-32 text-gray-700 space-y-8 md:px-12 lg:space-y-0 lg:flex lg:space-x-12 lg:pt-0">
+                                        <li>
+                                            <a href="#" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:bg-cyan-100">
+                                                <span class="relative text-cyan-800">Home</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-cyan-100 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
+                                                <span class="relative group-hover:text-cyan-800">Services</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-cyan-100 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
+                                                <span class="relative group-hover:text-cyan-800">Portfolio</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-cyan-100 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
+                                                <span class="relative group-hover:text-cyan-800">About us</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-t py-8 px-6 md:px-12 md:py-16 lg:border-t-0 lg:border-l lg:py-0 lg:pr-0 lg:pl-6">
+                            <a class="btn btn-search" href="/#"></a>
+                            <a href="#" class="block px-6 py-3 rounded-full bg-gradient-to-r from-sky-600 to-cyan-400 text-center text-white">
+                                Get started
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <script src="./assets/js/custom.js"></script>
+
+</body>
+
+</html>

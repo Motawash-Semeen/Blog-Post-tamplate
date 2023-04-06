@@ -1,0 +1,16 @@
+npm init -y
+npm install tailwindcss
+
+add "build-css": "tailwindcss build -i src/styles.css -o public/styles.css" under scripts 
+
+npx tailwindcss init
+
+
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
