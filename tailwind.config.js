@@ -10,6 +10,9 @@ module.exports = {
             screens: {
                 'xsm': '405px',
             },
+            fontFamily: {
+                body: ['Noto Sans']
+            },
 
         },
     },
