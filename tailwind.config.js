@@ -5,7 +5,12 @@ module.exports = {
         extend: {
             colors: {
                 bg_main: 'rgb(15, 23, 42)',
-            }
+            },
+
+            screens: {
+                'xsm': '405px',
+            },
+
         },
     },
     plugins: [],

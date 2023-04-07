@@ -12,12 +12,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
+    <style>
+        @media only screen and (min-width: 768px) {
+            .parent:hover .child {
+                opacity: 1;
+                height: auto;
+                overflow: none;
+                transform: translateY(0);
+            }
+            .child {
+                opacity: 0;
+                height: 0;
+                overflow: hidden;
+                transform: translateY(-10%);
+            }
+        }
+    </style>
 </head>
 
 <body class="bg-bg_main">
-    <div class="h-screen bg-gray-50">
+
+    <!-- NAVBAR START -->
+
+    <section class="h-screen bg-gray-50">
         <header>
             <div class="relative z-20 border-b bg-white">
                 <div class="px-6 md:px-12 lg:container lg:mx-auto lg:px-6 lg:py-4">
@@ -29,13 +47,7 @@
                         </div>
 
                         <div class="flex items-center justify-end border-l lg:border-l-0">
-                            <input type="checkbox" name="hamburger" id="hamburger" class="peer" hidden>
-                            <label for="hamburger" class="peer-checked:hamburger block relative z-20 p-6 -mr-6 cursor-pointer lg:hidden">
-                                <div aria-hidden="true"
-                                    class="m-auto h-0.5 w-6 rounded bg-sky-900 transition duration-300"></div>
-                                <div aria-hidden="true"
-                                    class="m-auto mt-2 h-0.5 w-6 rounded bg-sky-900 transition duration-300"></div>
-                            </label>
+
 
                             <div class="peer-checked:translate-x-0 fixed inset-0 w-[calc(100%-4.5rem)] translate-x-[-100%] bg-white border-r shadow-xl transition duration-300 lg:border-r-0 lg:w-auto lg:static lg:shadow-none lg:translate-x-0">
                                 <div class="flex flex-col h-full justify-between lg:items-center lg:flex-row">
@@ -47,41 +59,119 @@
                                         </li>
                                         <li>
                                             <a href="#" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-cyan-100 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
-                                                <span class="relative group-hover:text-cyan-800">Services</span>
+                                                <span class="relative group-hover:text-cyan-800">About Us</span>
                                             </a>
+                                        </li>
+                                        <li class="relative parent">
+                                            <a href="#" class="flex justify-between md:inline-flex items-center hover:bg-gray-50 space-x-2">
+                                                <span>Category</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
+                                            </a>
+                                            <ul class="child transition duration-300 md:absolute top-full right-0 md:w-48 bg-white md:shadow-lg md:rounded-b ">
+                                                <li>
+                                                    <a href="#" class="flex px-4 py-3 hover:bg-gray-50">
+                                                        Web development
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="flex px-4 py-3 hover:bg-gray-50">
+                                                        Web Design
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="flex px-4 py-3 hover:bg-gray-50">
+                                                        Machine Learning
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </li>
                                         <li>
                                             <a href="#" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-cyan-100 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
-                                                <span class="relative group-hover:text-cyan-800">Portfolio</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-cyan-100 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
-                                                <span class="relative group-hover:text-cyan-800">About us</span>
+                                                <span class="relative group-hover:text-cyan-800">Contact</span>
                                             </a>
                                         </li>
                                     </ul>
-
-
                                 </div>
                             </div>
                         </div>
-                        <div class="border-t py-8 px-6 md:px-12 md:py-16 lg:border-t-0 lg:border-l lg:py-0 lg:pr-0 lg:pl-6 flex items-center">
+                        <!-- MOBILE MENU START -->
+
+                        <div class="border-t py-3 px-6 md:px-6 md:py-4 lg:border-t-0 lg:border-l lg:py-0 lg:pr-0 lg:pl-6 flex items-center">
                             <a class="btn btn-search w-10 h-10 flex items-center" href="/#">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M19 19L13 13L19 19ZM15 8C15 8.91925 14.8189 9.82951 14.4672 10.6788C14.1154 11.5281 13.5998 12.2997 12.9497 12.9497C12.2997 13.5998 11.5281 14.1154 10.6788 14.4672C9.82951 14.8189 8.91925 15 8 15C7.08075 15 6.1705 14.8189 5.32122 14.4672C4.47194 14.1154 3.70026 13.5998 3.05025 12.9497C2.40024 12.2997 1.88463 11.5281 1.53284 10.6788C1.18106 9.82951 1 8.91925 1 8C1 6.14348 1.7375 4.36301 3.05025 3.05025C4.36301 1.7375 6.14348 1 8 1C9.85652 1 11.637 1.7375 12.9497 3.05025C14.2625 4.36301 15 6.14348 15 8Z" stroke="#94A9C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </a>
-                            <a href="#" class="block px-6 py-3 rounded-full bg-gradient-to-r from-sky-600 to-cyan-400 text-center text-white">
-                                Get started
+                            <a href="#" class="px-6 py-3 rounded-full bg-gradient-to-r from-sky-600 to-cyan-400 text-center text-white hidden sm:block">
+                                Subscribes
                             </a>
+                            <input type="checkbox" name="hamburger" id="hamburger" class="peer" hidden>
+                            <label for="hamburger" class="peer-checked:hamburger block relative z-20 p-6 -mr-6 cursor-pointer lg:hidden">
+                                <div aria-hidden="true"
+                                    class="m-auto h-0.5 w-6 rounded bg-sky-900 transition duration-300"></div>
+                                <div aria-hidden="true"
+                                    class="m-auto mt-2 h-0.5 w-6 rounded bg-sky-900 transition duration-300"></div>
+                            </label>
+                            <div class="peer-checked:translate-x-0 fixed inset-0 xsm:w-[55%] translate-x-[-100%] bg-white border-r shadow-xl transition duration-300 lg:border-r-0 lg:w-auto lg:static lg:shadow-none lg:translate-x-0 lg:hidden">
+                                <div class="flex flex-col h-full justify-between lg:items-center lg:flex-row">
+                                    <ul class="px-6 pt-32 text-gray-700 space-y-8 md:px-12 lg:space-y-0 lg:flex lg:space-x-12 lg:pt-0">
+                                        <li>
+                                            <a href="#" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:bg-cyan-100">
+                                                <span class="relative text-cyan-800">Home</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-cyan-100 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
+                                                <span class="relative group-hover:text-cyan-800">About Us</span>
+                                            </a>
+                                        </li>
+                                        <li class="relative m-parent">
+                                            <a href="#" class="dropservice flex gap-2 md:inline-flex items-center hover:bg-gray-50 space-x-2">
+                                                <span>Category</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
+                                            </a>
+                                            <ul class="m-child service-child hidden transition duration-300  top-full left-2	 md:w-48 bg-white md:shadow-lg md:rounded-b ">
+                                                <li>
+                                                    <a href="#" class="flex pl-2 py-3 hover:bg-gray-50">
+                                                        Web development
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="flex pl-2 py-3 hover:bg-gray-50">
+                                                        Web Design
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="flex pl-2 py-3 hover:bg-gray-50">
+                                                        Machine Learning
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </li>
+                                        <li>
+                                            <a href="#" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-cyan-100 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
+                                                <span class="relative group-hover:text-cyan-800">Contact</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
+                        <!-- MOBILE MENU ENDS -->
                     </div>
                 </div>
             </div>
         </header>
-    </div>
+    </section>
 
+    <!-- NAVBARV ENDS -->
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="./assets/js/custom.js"></script>
 
 </body>
