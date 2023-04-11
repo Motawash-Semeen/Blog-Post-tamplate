@@ -13,6 +13,9 @@ module.exports = {
             fontFamily: {
                 body: ['Noto Sans']
             },
+            screens: {
+                'vsm': '435px',
+            },
 
         },
     },

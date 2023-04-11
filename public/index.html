@@ -379,26 +379,29 @@
                 <h2 class="text-4xl	mb-4 font-bold">Weekly Popular</h2>
                 <p class="text-lg">Most viewed post on this week</p>
             </div>
-            <div class="weekly-body mt-5">
-                <div class="weekly-main w-[70%]">
-                    <div class="weekly-tabs w-[50%] mx-auto mb-4">
-                        <ul class="weekly-tabs-main flex flex-row justify-between text-sm items-center ">
-                            <li class="flex flex-row gap-1   items-center hover:bg-black  hover:text-white">
+            <div class="weekly-body mt-5 flex lg:flex-row flex-col w-full">
+                <div class="weekly-main lg:w-[70%] w-full" id="tabs">
+                    <div class="weekly-tabs w-fit mx-auto mb-6">
+                        <ul class="weekly-tabs-main flex flex-row justify-center flex-wrap gap-2 text-sm items-center ">
+                            <!-- <li class=" tablinks flex flex-row gap-1   items-center hover:effect font-color" onclick="openTab(event, 'all')">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-4 h-4" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M352 144h112v112"/><path d="M48 368l121.37-121.37a32 32 0 0145.26 0l50.74 50.74a32 32 0 0045.26 0L448 160" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>                                All
-                            </li>
-                            <li class=" hover:bg-black  hover:text-white">LifeStyle</li>
-                            <li class=" hover:bg-black  hover:text-white">Travel</li>
-                            <li class=" hover:bg-black  hover:text-white">Fashion</li>
-                            <li class=" hover:bg-black  hover:text-white">Sports</li>
+                            </li> -->
+                            <li class="tablinks hover:effect font-color active" onclick="openTab(event, 'lifestyle')">LifeStyle</li>
+                            <li class="tablinks hover:effect font-color" onclick="openTab(event, 'travel')">Travel</li>
+                            <li class="tablinks hover:effect font-color" onclick="openTab(event, 'fashion')">Fashion</li>
+                            <li class="tablinks hover:effect font-color" onclick="openTab(event, 'sports')">Sports</li>
                         </ul>
                     </div>
-                    <div class="weekly-items mt-4 flex flex-row">
-                        <div class="weekly-item w-[50%] pr-3">
-                            <div class="weekly-item-img rounded overflow-hidden">
-                                <img src="./assets/images/news-1.jpg" class="min-h-[280px] w-full" alt="">
+                    <div class="weekly-items mt-4 flex md:flex-row flex-col">
+                        <div class="weekly-item md:w-[50%] w-full pr-4">
+                            <div class="weekly-item-img rounded overflow-hidden group ">
+                                <a href="#">
+                                    <img class=" hover:scale-105 transition duration-600 ease-in" src="./assets/images/news-1.jpg" class="min-h-[280px] w-full" alt="">
+                                </a>
+
                             </div>
                             <div class="weekly-img-info mt-4">
-                                <h3 class="font-semibold	  text-2xl mb-3 hover:text-rose-600 transition duration-500 ease-in-out"><a href="#">The World Caters to Average People and Mediocre Lifestyles</a></h3>
+                                <h3 class="font-semibold text-2xl mb-3 hover:text-rose-600 transition duration-500 ease-in-out"><a href="#">The World Caters to Average People and Mediocre Lifestyles</a></h3>
                                 <div class="post-interection flex flex-row flex-wrap gap-2 font-extralight mb-5">
                                     <div class="post-up flex flex-row flex-wrap	 gap-1 items-center justify-center">
                                         <i class='bx bx-pencil w-3 h-3' style='color:#889097'></i>
@@ -418,10 +421,271 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="weekly-item md:w-[50%] w-full flex flex-row flex-wrap">
+                            <div class="weekly-sub-item sm:w-[50%] w-full sm:px-2.5 px-0 sm:my-0 my-2  tabcontent lifestyle h-max" id="lifestyle">
+                                <div class="weekly-sub-img rounded overflow-hidden mb-3">
+                                    <a href="#">
+                                        <img class="w-full hover:scale-105 transition duration-600 ease-in h-full md:h-[134px] object-cover" src="./assets/images/news-9.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="weekly-sub-txt mb-1">
+                                    <h4 class="font-semibold">The litigants on the screen are not actors</h4>
+                                </div>
+                                <div class="post-interection flex flex-row flex-wrap gap-2 font-extralight ">
+                                    <div class="post-up ">
+                                        <small>25 April</small>
+                                    </div>
+                                    <div class="post-views ">
+                                        <small>159 views</small>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="weekly-sub-item sm:w-[50%] w-full sm:px-2.5 px-0 sm:my-0 my-2 hidden tabcontent travel" id="travel">
+                                <div class="weekly-sub-img rounded overflow-hidden mb-3">
+                                    <a href="#">
+                                        <img class="object-cover w-full h-full md:h-[134px] hover:scale-105 transition duration-600 ease-in" src="./assets/images/news-8.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="weekly-sub-txt mb-1">
+                                    <h4 class="font-semibold">The litigants on the screen are not actors</h4>
+                                </div>
+                                <div class="post-interection flex flex-row flex-wrap gap-2 font-extralight">
+                                    <div class="post-up ">
+                                        <small>25 April</small>
+                                    </div>
+                                    <div class="post-views ">
+                                        <small>159 views</small>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="weekly-sub-item sm:w-[50%] w-full sm:px-2.5 px-0 sm:my-0 my-2 hidden tabcontent fashion" id="fashion">
+                                <div class="weekly-sub-img rounded overflow-hidden mb-3">
+                                    <a href="#">
+                                        <img class="object-cover w-full h-full md:h-[134px] hover:scale-105 transition duration-600 ease-in" src="./assets/images/news-3.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="weekly-sub-txt mb-1">
+                                    <h4 class="font-semibold">The litigants on the screen are not actors</h4>
+                                </div>
+                                <div class="post-interection flex flex-row flex-wrap gap-2 font-extralight ">
+                                    <div class="post-up ">
+                                        <small>25 April</small>
+                                    </div>
+                                    <div class="post-views ">
+                                        <small>159 views</small>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="weekly-sub-item sm:w-[50%] w-full sm:px-2.5 px-0 sm:my-0 my-2 hidden tabcontent sports" id="sports">
+                                <div class="weekly-sub-img rounded overflow-hidden mb-3">
+                                    <a href="#">
+                                        <img class="object-cover w-full h-full md:h-[134px] hover:scale-105 transition duration-600 ease-in" src="./assets/images/news-2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="weekly-sub-txt mb-1">
+                                    <h4 class="font-semibold ">The litigants on the screen are not actors</h4>
+                                </div>
+                                <div class="post-interection flex flex-row flex-wrap gap-2 font-extralight">
+                                    <div class="post-up ">
+                                        <small>25 April</small>
+                                    </div>
+                                    <div class="post-views ">
+                                        <small>159 views</small>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="weekly-sub-item sm:w-[50%] w-full sm:px-2.5 px-0 sm:my-0 my-2  tabcontent lifestyle" id="lifestyle">
+                                <div class="weekly-sub-img rounded overflow-hidden mb-3">
+                                    <a href="#">
+                                        <img class="object-cover w-full h-full md:h-[134px] object-cover hover:scale-105 transition duration-600 ease-in" src="./assets/images/thumbnail-7.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="weekly-sub-txt mb-1">
+                                    <h4 class="font-semibold">The litigants on the screen are not actors</h4>
+                                </div>
+                                <div class="post-interection flex flex-row flex-wrap gap-2 font-extralight ">
+                                    <div class="post-up ">
+                                        <small>25 April</small>
+                                    </div>
+                                    <div class="post-views ">
+                                        <small>159 views</small>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="weekly-sub-item sm:w-[50%] w-full sm:px-2.5 px-0 sm:my-0 my-2 hidden tabcontent travel" id="travel">
+                                <div class="weekly-sub-img rounded overflow-hidden mb-3">
+                                    <a href="#">
+                                        <img class="object-cover w-full h-full md:h-[134px] hover:scale-105 transition duration-600 ease-in" src="./assets/images/thumbnail-6.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="weekly-sub-txt mb-1">
+                                    <h4 class="font-semibold">The litigants on the screen are not actors</h4>
+                                </div>
+                                <div class="post-interection flex flex-row flex-wrap gap-2 font-extralight">
+                                    <div class="post-up ">
+                                        <small>25 April</small>
+                                    </div>
+                                    <div class="post-views ">
+                                        <small>159 views</small>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="weekly-sub-item sm:w-[50%] w-full sm:px-2.5 px-0 sm:my-0 my-2 hidden tabcontent fashion" id="fashion">
+                                <div class="weekly-sub-img rounded overflow-hidden mb-3">
+                                    <a href="#">
+                                        <img class="object-cover w-full h-full md:h-[134px] hover:scale-105 transition duration-600 ease-in" src="./assets/images/thumbnail-5.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="weekly-sub-txt mb-1">
+                                    <h4 class="font-semibold">The litigants on the screen are not actors</h4>
+                                </div>
+                                <div class="post-interection flex flex-row flex-wrap gap-2 font-extralight ">
+                                    <div class="post-up ">
+                                        <small>25 April</small>
+                                    </div>
+                                    <div class="post-views ">
+                                        <small>159 views</small>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="weekly-sub-item sm:w-[50%] w-full sm:px-2.5 px-0 sm:my-0 my-2 hidden tabcontent sports" id="sports">
+                                <div class="weekly-sub-img rounded overflow-hidden mb-3">
+                                    <a href="#">
+                                        <img class="object-cover w-full h-full md:h-[134px] hover:scale-105 transition duration-600 ease-in" src="./assets/images/thumbnail-4.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="weekly-sub-txt mb-1">
+                                    <h4 class="font-semibold ">The litigants on the screen are not actors</h4>
+                                </div>
+                                <div class="post-interection flex flex-row flex-wrap gap-2 font-extralight">
+                                    <div class="post-up ">
+                                        <small>25 April</small>
+                                    </div>
+                                    <div class="post-views ">
+                                        <small>159 views</small>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="weekly-sub-item sm:w-[50%] w-full sm:px-2.5 px-0 sm:my-0 my-2  tabcontent lifestyle" id="lifestyle">
+                                <div class="weekly-sub-img rounded overflow-hidden mb-3">
+                                    <a href="#">
+                                        <img class="object-cover w-full h-full md:h-[134px] object-cover hover:scale-105 transition duration-600 ease-in" src="./assets/images/thumbnail-3.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="weekly-sub-txt mb-1">
+                                    <h4 class="font-semibold">The litigants on the screen are not actors</h4>
+                                </div>
+                                <div class="post-interection flex flex-row flex-wrap gap-2 font-extralight ">
+                                    <div class="post-up ">
+                                        <small>25 April</small>
+                                    </div>
+                                    <div class="post-views ">
+                                        <small>159 views</small>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="weekly-sub-item sm:w-[50%] w-full sm:px-2.5 px-0 sm:my-0 my-2 hidden tabcontent travel " id="travel">
+                                <div class="weekly-sub-img rounded overflow-hidden mb-3">
+                                    <a href="#">
+                                        <img class="object-cover w-full h-full md:h-[134px] hover:scale-105 transition duration-600 ease-in" src="./assets/images/news-2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="weekly-sub-txt mb-1">
+                                    <h4 class="font-semibold">The litigants on the screen are not actors</h4>
+                                </div>
+                                <div class="post-interection flex flex-row flex-wrap gap-2 font-extralight">
+                                    <div class="post-up ">
+                                        <small>25 April</small>
+                                    </div>
+                                    <div class="post-views ">
+                                        <small>159 views</small>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="weekly-sub-item sm:w-[50%] w-full sm:px-2.5 px-0 sm:my-0 my-2 hidden tabcontent fashion" id="fashion">
+                                <div class="weekly-sub-img rounded overflow-hidden mb-3">
+                                    <a href="#">
+                                        <img class="object-cover w-full h-full md:h-[134px] hover:scale-105 transition duration-600 ease-in" src="./assets/images/news-1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="weekly-sub-txt mb-1">
+                                    <h4 class="font-semibold">The litigants on the screen are not actors</h4>
+                                </div>
+                                <div class="post-interection flex flex-row flex-wrap gap-2 font-extralight ">
+                                    <div class="post-up ">
+                                        <small>25 April</small>
+                                    </div>
+                                    <div class="post-views ">
+                                        <small>159 views</small>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="weekly-sub-item sm:w-[50%] w-full sm:px-2.5 px-0 sm:my-0 my-2 hidden tabcontent sports" id="sports">
+                                <div class="weekly-sub-img rounded overflow-hidden mb-3">
+                                    <a href="#">
+                                        <img class="w-full h-full md:h-[134px] object-cover hover:scale-105 transition duration-600 ease-in" src="./assets/images/news-2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="weekly-sub-txt mb-1">
+                                    <h4 class="font-semibold ">The litigants on the screen are not actors</h4>
+                                </div>
+                                <div class="post-interection flex flex-row flex-wrap gap-2 font-extralight">
+                                    <div class="post-up ">
+                                        <small>25 April</small>
+                                    </div>
+                                    <div class="post-views ">
+                                        <small>159 views</small>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="follow W-[30%]">
+                <div class="follow xl:w-[30%] lg:w-[15%] md:w-[50%] vsm:w-[80%] w-fit pl-1.5 lg:mt-0 mt-7">
+                    <h3 class="text-xl font-semibold">Follow Us</h3>
+                    <div class="social-items flex flex-row flex-wrap mt-6">
+                        <div class="social-item p-1.5 vsm:w-[50%]  max-[434px]:w-fit ">
+                            <div class="flex flex-row px-[13px] py-[10px] rounded bg-[#305c99] text-white items-center ">
+                                <i class='bx bxl-facebook text-xl max-[434px]:pr-0 max-[434px]:border-0 vsm:pr-2 vsm:border-r lg:pr-0 lg:border-0 xl:pr-2 xl:border-r' style='color:#ffffff'></i>
+                                <span class="pl-2 text-sm max-[434px]:hidden vsm:block lg:hidden xl:block">Facebook</span>
+                            </div>
+                        </div>
+                        <div class="social-item p-1.5 vsm:w-[50%]  max-[43max-[434px]:w-fit 4px]:w-fit ">
+                            <div class="flex flex-row px-[13px] py-[10px] rounded bg-[#00cdff] text-white items-center ">
+                                <i class='bx bxl-twitter text-xl max-[434px]:pr-0 max-[434px]:border-0 vsm:pr-2 vsm:border-r lg:pr-0 lg:border-0 xl:pr-2 xl:border-r' style='color:#ffffff'></i>
+                                <span class="pl-2 text-sm max-[434px]:hidden vsm:block lg:hidden xl:block">Twitter</span>
+                            </div>
+                        </div>
+                        <div class="social-item p-1.5 vsm:w-[50%]  max-[434px]:w-fit  ">
+                            <div class="flex flex-row px-[13px] py-[10px] rounded bg-[#3f729b] text-white items-center ">
+                                <i class='bx bxl-instagram text-xl max-[434px]:pr-0 max-[434px]:border-0 vsm:pr-2 vsm:border-r lg:pr-0 lg:border-0 xl:pr-2 xl:border-r' style='color:#ffffff'></i>
+                                <span class="pl-2 text-sm max-[434px]:hidden vsm:block lg:hidden xl:block">Instagram</span>
+                            </div>
+                        </div>
+                        <div class="social-item p-1.5 vsm:w-[50%]  max-[434px]:w-fit  ">
+                            <div class="flex flex-row px-[13px] py-[10px] rounded bg-[#e22b26] text-white items-center ">
+                                <i class='bx bxl-youtube text-xl max-[434px]:pr-0 max-[434px]:border-0 vsm:pr-2 vsm:border-r lg:pr-0 lg:border-0 xl:pr-2 xl:border-r' style='color:#ffffff'></i>
+                                <span class="pl-2 text-sm max-[434px]:hidden vsm:block lg:hidden xl:block">Youtube</span>
+                            </div>
+                        </div>
 
+
+                    </div>
                 </div>
             </div>
         </div>
