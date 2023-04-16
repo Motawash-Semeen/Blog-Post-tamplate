@@ -184,85 +184,51 @@
 
     <!-- NAVBARV ENDS -->
 
-    <section id="contact-info">
-        <div class="sm:container mx-auto">
-            <div class="contact-info-main w-[70%] mx-auto text-center my-20">
-                <div class="contact-head">
-                    <h2 class="mb-7 md:text-6xl text-4xl	 font-extrabold	 bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent">Contact Us</h2>
-                </div>
-                <div class="contact-txt text-xl	font-normal	">
-                    <p>We are AliThemes , a creative and dedicated group of individuals who love web development almost as much as we love our customers. We are passionate team with the mission for achieving the perfection in web design. All designs are
-                        made by love with pixel perfect design and excellent coding quality. Speed, security and SEO friendly alway in our mind.</p>
-                </div>
-                <div class="contact-info-icon flex flex-row my-8 flex-wrap justify-center">
-                    <div class="contact-items basis-full sm:basis-6/12 lg:basis-4/12 flex flex-row items-center justify-center mt-3">
-                        <div class="contact-item-icon pr-2">
-                            <i class='bx bx-headphone text-5xl bg-clip-text text-transparent	bg-gradient-to-r from-cyan-400 to-blue-500'></i>
-                        </div>
-                        <div class="contact-item-txt">
-                            (48) 654-430-309<br>(01) 6532-430-309
-                        </div>
-                    </div>
-                    <div class="contact-items basis-full sm:basis-6/12 lg:basis-4/12 flex flex-row items-center justify-center mt-3">
-                        <div class="contact-item-icon pr-2">
-
-                            <i class='bx bx-current-location text-5xl bg-clip-text text-transparent	bg-gradient-to-r from-cyan-400 to-blue-500'></i>
-                        </div>
-                        <div class="contact-item-txt">
-                            sales@genz.com<br>contact@genz.com
-                        </div>
-                    </div>
-                    <div class="contact-items basis-full sm:basis-6/12 lg:basis-4/12 flex flex-row items-center justify-center mt-3">
-                        <div class="contact-item-icon pr-2">
-
-                            <i class='bx bxl-telegram text-5xl bg-clip-text text-transparent	bg-gradient-to-r from-cyan-400 to-blue-500'></i>
-                        </div>
-                        <div class="contact-item-txt">
-                            Colorado(CO), 80117<br>11567 E Broadview Dr
-                        </div>
-                    </div>
-                </div>
+    <section class="error-body my-12">
+        <div class="px-[8.33%] sm:container mx-auto ">
+            <div class="login-head text-center pb-11">
+                <h2 class="md:text-6xl text-4xl	 font-extrabold	 bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent   pb-5">LogIn</h2>
             </div>
-        </div>
-    </section>
-
-    <!-- GET IN TOUCH FORM -->
-
-    <section id="forms">
-        <div class="forms-container px-[8.33%] sm:container mx-auto my-12">
-            <div class="forms-head text-center">
-                <h3 class="mb-2.5 text-3xl font-bold bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent">Drop a Comment<br>or<br>Become an Editor</h3>
-                <small>Your information will not be published. Required fields are marked *
-                </small>
-            </div>
-            <div class="forms-main mt-8">
+            <div class="login-form w-full lg:w-3/6 mx-auto p-7 rounded bg-white">
                 <form action="" method="">
-                    <div class="forms-flex flex flex-row flex-wrap">
-                        <div class="form-item basis-full lg:basis-6/12 px-4 my-6">
-                            <input class="w-full p-5 rounded focus:outline-[#7f92b0] " type="text" placeholder="Your name *" name="name">
+                    <div class="form-list w-full mb-6">
+                        <input class="p-4 rounded w-full outline outline-slate-300  outline-1 focus:outline-slate-400" type="text" placeholder="User name">
+                    </div>
+                    <div class="form-list w-full mb-6">
+                        <input class="p-4 rounded w-full outline outline-slate-300  outline-1 focus:outline-slate-400" type="password" placeholder="Password">
+                    </div>
+                    <div class="form-list flex max-[400px]:flex-col flex-row justify-between items-center w-full mb-6">
+                        <div class="chek-form ">
+                            <div class="form-checkbox">
+                                <input class="form-check-input" type="checkbox" name="checkbox" id="formCheckbox" value="">
+                                <label class="form-check-label" for="formCheckbox"><span>Remember me</span></label>
+                            </div>
                         </div>
-                        <div class="form-item basis-full lg:basis-6/12 px-4 my-6">
-                            <input class="w-full p-5 rounded focus:outline-[#7f92b0]" type="email" placeholder="Email *" name="email">
-                        </div>
-                        <div class="form-item basis-full px-4 my-6">
-                            <input class="w-full p-5 rounded focus:outline-[#7f92b0]" type="text" placeholder="Subject *" name="subj">
-                        </div>
-                        <div class="form-item basis-full px-4 my-6">
-                            <textarea class="w-full p-5 rounded focus:outline-[#7f92b0]" rows="5" placeholder="Message *"></textarea>
-                        </div>
-                        <div class="form-item basis-full px-4 my-6 text-white flex justify-center ">
-                            <a class=" w-max flex items-center px-7 py-4 rounded bg-gradient-to-r from-cyan-400 to-blue-500 hover:bg-gradient-to-l from-blue-400 to-cyan-500" href="#">
-                                <p>Send Message</p>
-                                <i class='bx bx-chevron-right'></i>
-                            </a>
-                        </div>
+                        <a class="text-blue-500 max-[400px]:mt-3" href="#">Forgot Password?</a>
+                    </div>
+                    <div class="form-list mb-6">
+                        <button class="w-full rounded py-2.5 bg-gradient-to-r text-white text-sm	font-bold  from-cyan-400 to-blue-500 hover:bg-gradient-to-l from-blue-400 to-cyan-500 ease-in-out duration-500 
+                        " type="submit">Log in</button>
+                    </div>
+                    <div class="form-list text-center">
+                        <p>Don't have an account?
+                            <a class="text-blue-500" href="#"><br class="max-[400px]:block hidden"> Sign Up</a>
+                        </p>
                     </div>
                 </form>
             </div>
+            <div class="login-google w-full lg:w-3/6 mx-auto p-7 text-center">
+                <div class="relative login-google-head before:absolute before:top-2/4 before:left-0 before:w-full before:h-[1px] before:bg-black before:z-0">
+                    <p class="relative w-max mx-auto z-30 bg-slate-200 px-2 my-8 max-[400px]:text-xs">Or, sign in with google account</p>
+                </div>
+                <div class="login-google-btn">
+                    <a href="#" class="flex items-center justify-center text-white w-full rounded py-2.5 bg-gradient-to-r text-sm	font-bold  from-cyan-400 to-blue-500 hover:bg-gradient-to-l from-blue-400 to-cyan-500 ease-in-out duration-500">
+                        <i class='bx bxl-google'></i>Sign in with Google
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
-
-    <!-- GET IN TOUCH FORM END-->
 
     <!-- FOOTER START -->
 
