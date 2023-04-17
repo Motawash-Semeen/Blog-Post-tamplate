@@ -184,49 +184,79 @@
 
     <!-- NAVBARV ENDS -->
 
-    <section class="login-body my-12">
+    <section class="result-body my-12">
         <div class="px-[8.33%] sm:container mx-auto ">
-            <div class="login-head text-center pb-11">
-                <h2 class="md:text-6xl text-4xl	 font-extrabold	 bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent   pb-5">LogIn</h2>
+            <div class="result-head text-center pb-11 relative">
+                <div class="before:absolute before:w-full before:h-[1px] before:bg-black before:bottom-0 before:left-0">
+                    <h2 class="md:text-6xl text-4xl	 font-extrabold	 bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent   pb-5">Search Result</h2>
+                    <p class="text-center">We found 22 articles for "myself" key word</p>
+                </div>
+
             </div>
-            <div class="login-form w-full lg:w-3/6 mx-auto p-7 rounded bg-white">
-                <form action="" method="">
-                    <div class="form-list w-full mb-6">
-                        <input class="p-4 rounded w-full outline outline-slate-300  outline-1 focus:outline-slate-400" type="text" placeholder="User name">
-                    </div>
-                    <div class="form-list w-full mb-6">
-                        <input class="p-4 rounded w-full outline outline-slate-300  outline-1 focus:outline-slate-400" type="password" placeholder="Password">
-                    </div>
-                    <div class="form-list flex max-[400px]:flex-col flex-row justify-between items-center w-full mb-6">
-                        <div class="chek-form ">
-                            <div class="form-checkbox">
-                                <input class="form-check-input" type="checkbox" name="checkbox" id="formCheckbox" value="">
-                                <label class="form-check-label" for="formCheckbox"><span>Remember me</span></label>
+
+            <!-- RECENT POST START -->
+
+            <div id="post">
+                <div class="">
+                    <div class="post-dtls lg:w-[60%] w-[100%] mx-auto">
+
+                        <div class="card-list mt-10">
+                            <div class="card-post flex sm:flex-row flex-col mt-16 ">
+                                <div class="card-img sm:w-[45%] w-full  pr-6 ">
+                                    <a href="#">
+                                        <img class="xl:h-[260px] h-full w-full rounded overflow-hidden  object-cover" src="./assets/images/news-2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-info sm:w-[55%] sm:mt-0 mt-5 w-full">
+                                    <a class="rounded-full bg-[#9cb5db] py-1.5 px-3.5 text-xs	font-bold hover:bg-[#778aa7] transition duration-500 ease-in-out" href="/">Working Tips</a>
+                                    <a href="/">
+                                        <h4 class="mt-3.5 mb-5 text-2xl font-bold hover:text-rose-600 transition duration-500 ease-in-out	 ">
+                                            Helpful Tips for Working from Home as a Freelancer
+                                        </h4>
+                                    </a>
+                                    <p class="text-sm text-slate-500">Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far</p>
+                                    <div class="mt-5 text-slate-600	text-sm	flex flex-row justify-between items-center">
+                                        <div class="">
+                                            <a class="mr-3.5 hover:text-[#0ea5d8] transition duration-500 ease-in-out" href="/"># Travel</a>
+                                            <a class="hover:text-[#0ea5d8] transition duration-500 ease-in-out" href="/">#
+                                            Lifestyle</a>
+                                        </div>
+                                        <div class="flex items-center gap-1">
+                                            <i class='bx bx-stopwatch'></i>
+                                            <span class="">3 mins read</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
-                        <a class="text-blue-500 max-[400px]:mt-3" href="#">Forgot Password?</a>
+                        <div class="post-pagination mt-10">
+                            <ul class="pagination-main text-white  flex flex-row justify-end">
+                                <li class="w-10 h-10 rounded-full bg-slate-400 hover:bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center hover:-translate-y-px	 transition duration-500 ease-in-out mx-2">
+                                    <a href="#">
+                                        <i class='bx bx-chevron-left text-lg' style='color:#ffffff'></i>
+                                    </a>
+                                </li>
+                                <li class="w-10 h-10 rounded-full bg-slate-400 hover:bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center hover:-translate-y-px	 transition duration-500 ease-in-out text-sm mx-2">
+                                    <a href="#">1</a>
+                                </li>
+                                <li class="w-10 h-10 rounded-full bg-slate-400 hover:bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center hover:-translate-y-px	 transition duration-500 ease-in-out text-sm mx-2">
+                                    <a href="#">2</a>
+                                </li>
+                                <li class="w-10 h-10 rounded-full bg-slate-400 hover:bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center hover:-translate-y-px	 transition duration-500 ease-in-out text-sm mx-2">
+                                    <a href="#">3</a>
+                                </li>
+                                <li class="w-10 h-10 rounded-full bg-slate-400 hover:bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center hover:-translate-y-px	 transition duration-500 ease-in-out text-sm mx-2">
+                                    <a href="#"><i class='bx bx-chevron-right text-lg' style='color:#ffffff'></i></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="form-list mb-6">
-                        <button class="w-full rounded py-2.5 bg-gradient-to-r text-white text-sm	font-bold  from-cyan-400 to-blue-500 hover:bg-gradient-to-l from-blue-400 to-cyan-500 ease-in-out duration-500 
-                        " type="submit">Log in</button>
-                    </div>
-                    <div class="form-list text-center">
-                        <p>Don't have an account?
-                            <a class="text-blue-500" href="#"><br class="max-[400px]:block hidden"> Sign Up</a>
-                        </p>
-                    </div>
-                </form>
-            </div>
-            <div class="login-google w-full lg:w-3/6 mx-auto p-7 text-center">
-                <div class="relative login-google-head before:absolute before:top-2/4 before:left-0 before:w-full before:h-[1px] before:bg-black before:z-0">
-                    <p class="relative w-max mx-auto z-30 bg-slate-200 px-2 my-8 max-[400px]:text-xs">Or, sign in with google account</p>
                 </div>
-                <div class="login-google-btn">
-                    <a href="#" class="flex items-center justify-center text-white w-full rounded py-2.5 bg-gradient-to-r text-sm	font-bold  from-cyan-400 to-blue-500 hover:bg-gradient-to-l from-blue-400 to-cyan-500 ease-in-out duration-500">
-                        <i class='bx bxl-google mr-2'></i>Sign in with Google
-                    </a>
-                </div>
             </div>
+
+            <!-- RECENT POST END -->
+
         </div>
     </section>
 
