@@ -1084,6 +1084,10 @@ video {
   width: 150px;
 }
 
+.w-\[55\%\]{
+  width: 55%;
+}
+
 .basis-2\/6{
   flex-basis: 33.333333%;
 }
@@ -2209,6 +2213,10 @@ video {
     display: block;
   }
 
+  .max-\[400px\]\:w-\[55\%\]{
+    width: 55%;
+  }
+
   .max-\[400px\]\:flex-col{
     flex-direction: column;
   }
@@ -2230,6 +2238,10 @@ video {
 }
 
 @media (min-width: 400px){
+  .min-\[400px\]\:w-\[55\%\]{
+    width: 55%;
+  }
+
   .min-\[400px\]\:basis-3\/6{
     flex-basis: 50%;
   }

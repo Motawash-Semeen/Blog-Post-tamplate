@@ -3,6 +3,11 @@ $(document).ready(function() {
         $(".service-child").slideToggle("slow");
     });
 });
+$(document).ready(function() {
+    $(".dropservice2").click(function() {
+        $(".service-child2").slideToggle("slow");
+    });
+});
 
 
 var swiper = new Swiper(".mySwiper", {
@@ -50,32 +55,6 @@ $(document).ready(function() {
 });
 
 
-// $(document).ready(function() {
-
-//     var news = $(".weekly-tabs-main").li;
-//     //news[i].removeClass('active')
-
-
-
-//     $(".weekly-tabs-main").click(function(e) {
-//         tabcontent = $("tabs");
-//         for (i = 0; i < tabcontent.length; i++) {
-//             tabcontent[i].addClass('hover:effect');
-//             tabcontent[i].addClass('font-color');
-//             tabcontent[i].removeClass('active');
-//         }
-//         var tabs = e.target.innerText;
-//         tabs = tabs.toLowerCase();
-//         $('.' + tabs).fadeIn("slow");
-//         $(e.target).addClass('active');
-//         $(e.target).removeClass('hover:effect');
-//         $(e.target).removeClass('font-color');
-//         //news[0].removeClass('active')
-//     });
-
-
-
-// });
 
 
 
