@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genz-Personal Blog</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- BOXICON CSS CDN -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- SWIPER CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./assets/css/slick.css" />
+    <link rel="stylesheet" href="./assets/css/slick-theme.css" />
+
+
+    <style>
+        @media only screen and (min-width: 768px) {
+            .parent:hover .child {
+                opacity: 1;
+                height: auto;
+                overflow: none;
+                transform: translateY(0);
+            }
+            .child {
+                opacity: 0;
+                height: 0;
+                overflow: hidden;
+                transform: translateY(-10%);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-slate-200 font-body ">
+
+    <!-- NAVBAR START -->
+
+    <section class="h-max bg-gray-50 sticky top-0 z-50">
+        <header>
+            <div class="relative z-20 border-b bg-white">
+                <div class="px-6 md:px-12 lg:container lg:mx-auto lg:px-6
+                        lg:py-4">
+                    <div class="flex items-center justify-between">
+                        <div class="relative z-20">
+                            <a href="#">
+                                <img src="https://tailus.io/sources/blocks/navigation-layout/preview/images/logo.svg" alt="logo-tailus" class="w-32">
+                            </a>
+                        </div>
+
+                        <div class="flex items-center justify-end border-l
+                                lg:border-l-0">
+                            <div class="peer-checked:translate-x-0 fixed
+                                    inset-0 w-[calc(100%-4.5rem)]
+                                    translate-x-[-100%] bg-white border-r
+                                    shadow-xl transition duration-300
+                                    lg:border-r-0 lg:w-auto lg:static
+                                    lg:shadow-none lg:translate-x-0">
+                                <div class="flex flex-col h-full
+                                        justify-between lg:items-center
+                                        lg:flex-row">
+                                    <ul class="px-6 pt-32 text-gray-700
+                                            space-y-8 md:px-12 lg:space-y-0
+                                            lg:flex lg:space-x-12 lg:pt-0">
+                                        <li>
+                                            <a href="#" class="group
+                                                    relative before:absolute
+                                                    before:inset-x-0
+                                                    before:bottom-0 before:h-2
+                                                    before:bg-cyan-100">
+                                                <span class="relative
+                                                        text-cyan-800">Home</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="group
+                                                    relative before:absolute
+                                                    before:inset-x-0
+                                                    before:bottom-0 before:h-2
+                                                    before:origin-right
+                                                    before:scale-x-0
+                                                    before:bg-cyan-100
+                                                    before:transition
+                                                    before:duration-200
+                                                    hover:before:origin-left
+                                                    hover:before:scale-x-100">
+                                                <span class="relative
+                                                        group-hover:text-cyan-800">About
+                                                    Us</span>
+                                            </a>
+                                        </li>
+                                        <li class="relative parent">
+                                            <a href="#" class="flex
+                                                    justify-between
+                                                    md:inline-flex items-center
+                                                    hover:bg-gray-50 space-x-2">
+                                                <span>Category</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4
+                                                        fill-current pt-1" viewBox="0 0 24 24">
+                                                    <path d="M0
+                                                            7.33l2.829-2.83
+                                                            9.175 9.339
+                                                            9.167-9.339 2.829
+                                                            2.83-11.996 12.17z" />
+                                                </svg>
+                                            </a>
+                                            <ul class="child transition
+                                                        duration-300 md:absolute
+                                                        top-full right-0 md:w-48
+                                                        bg-white md:shadow-lg
+                                                        md:rounded-b ">
+                                                <li>
+                                                    <a href="#" class="flex px-4
+                                                                py-3
+                                                                hover:bg-gray-50">
+                                                        Web development
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="flex px-4
+                                                                py-3
+                                                                hover:bg-gray-50">
+                                                        Web Design
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="flex px-4
+                                                                py-3
+                                                                hover:bg-gray-50">
+                                                        Machine Learning
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="relative parent">
+                                            <a href="#" class="flex
+                                                        justify-between
+                                                        md:inline-flex
+                                                        items-center
+                                                        hover:bg-gray-50
+                                                        space-x-2">
+                                                <span>Pages</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4
+                                                            fill-current pt-1" viewBox="0 0 24 24">
+                                                    <path d="M0
+                                                                7.33l2.829-2.83
+                                                                9.175 9.339
+                                                                9.167-9.339
+                                                                2.829
+                                                                2.83-11.996
+                                                                12.17z" />
+                                                </svg>
+                                            </a>
+                                            <ul class="child
+                                                            transition
+                                                            duration-300
+                                                            md:absolute top-full
+                                                            right-0 md:w-48
+                                                            bg-white
+                                                            md:shadow-lg
+                                                            md:rounded-b ">
+                                                <li>
+                                                    <a href="#" class="flex
+                                                                    px-4 py-3
+                                                                    hover:bg-gray-50">
+                                                        Author Posts
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="flex
+                                                                    px-4 py-3
+                                                                    hover:bg-gray-50">
+                                                        Search
+                                                        Result
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="flex
+                                                                    px-4 py-3
+                                                                    hover:bg-gray-50">
+                                                        404
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="flex
+                                                                    px-4 py-3
+                                                                    hover:bg-gray-50">
+                                                        LogIn
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="flex
+                                                                    px-4 py-3
+                                                                    hover:bg-gray-50">
+                                                        SignUp
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="group
+                                                            relative
+                                                            before:absolute
+                                                            before:inset-x-0
+                                                            before:bottom-0
+                                                            before:h-2
+                                                            before:origin-right
+                                                            before:scale-x-0
+                                                            before:bg-cyan-100
+                                                            before:transition
+                                                            before:duration-200
+                                                            hover:before:origin-left
+                                                            hover:before:scale-x-100">
+                                                <span class="relative
+                                                                group-hover:text-cyan-800">Contact</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- MOBILE MENU START -->
+
+                        <div class="border-t py-3 px-6 md:px-6
+                                        md:py-4 lg:border-t-0 lg:border-l
+                                        lg:py-0 lg:pr-0 lg:pl-6 flex
+                                        items-center">
+                            <a class="btn btn-search w-10 h-10 flex
+                                            items-center" href="/#">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 19L13 13L19 19ZM15
+                                                    8C15 8.91925 14.8189 9.82951
+                                                    14.4672 10.6788C14.1154
+                                                    11.5281 13.5998 12.2997
+                                                    12.9497 12.9497C12.2997
+                                                    13.5998 11.5281 14.1154
+                                                    10.6788 14.4672C9.82951
+                                                    14.8189 8.91925 15 8
+                                                    15C7.08075 15 6.1705 14.8189
+                                                    5.32122 14.4672C4.47194
+                                                    14.1154 3.70026 13.5998
+                                                    3.05025 12.9497C2.40024
+                                                    12.2997 1.88463 11.5281
+                                                    1.53284 10.6788C1.18106
+                                                    9.82951 1 8.91925 1 8C1
+                                                    6.14348 1.7375 4.36301
+                                                    3.05025 3.05025C4.36301
+                                                    1.7375 6.14348 1 8 1C9.85652
+                                                    1 11.637 1.7375 12.9497
+                                                    3.05025C14.2625 4.36301 15
+                                                    6.14348 15 8Z" stroke="#94A9C9" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a href="#" class="px-6 py-3
+                                                rounded-full bg-gradient-to-r
+                                                from-sky-600 to-cyan-400
+                                                text-center text-white hidden
+                                                sm:block">
+                                Subscribes
+                            </a>
+                            <input type="checkbox" name="hamburger" id="hamburger" class="peer" hidden>
+                            <label for="hamburger" class="peer-checked:hamburger
+                                                block relative z-20 p-6 -mr-6
+                                                cursor-pointer lg:hidden">
+                                <div aria-hidden="true" class="m-auto h-0.5 w-6
+                                                    rounded bg-sky-900
+                                                    transition duration-300"></div>
+                                <div aria-hidden="true" class="m-auto mt-2 h-0.5 w-6
+                                                    rounded bg-sky-900
+                                                    transition duration-300"></div>
+                            </label>
+                            <div class="peer-checked:translate-x-0
+                                                fixed inset-0
+                                                min-[400px]:w-[55%]
+                                                translate-x-[-100%] bg-white
+                                                border-r shadow-xl transition
+                                                duration-300 lg:border-r-0
+                                                lg:w-auto lg:static
+                                                lg:shadow-none lg:translate-x-0
+                                                lg:hidden">
+                                <div class="flex flex-col h-full
+                                                    justify-between
+                                                    lg:items-center
+                                                    lg:flex-row">
+                                    <ul class="px-6 pt-32
+                                                        text-gray-700 space-y-8
+                                                        md:px-12 lg:space-y-0
+                                                        lg:flex lg:space-x-12
+                                                        lg:pt-0">
+                                        <li>
+                                            <a href="#" class="group
+                                                                relative
+                                                                before:absolute
+                                                                before:inset-x-0
+                                                                before:bottom-0
+                                                                before:h-2
+                                                                before:bg-cyan-100">
+                                                <span class="relative
+                                                                    text-cyan-800">Home</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="group
+                                                                relative
+                                                                before:absolute
+                                                                before:inset-x-0
+                                                                before:bottom-0
+                                                                before:h-2
+                                                                before:origin-right
+                                                                before:scale-x-0
+                                                                before:bg-cyan-100
+                                                                before:transition
+                                                                before:duration-200
+                                                                hover:before:origin-left
+                                                                hover:before:scale-x-100">
+                                                <span class="relative
+                                                                    group-hover:text-cyan-800">About
+                                                    Us</span>
+                                            </a>
+                                        </li>
+                                        <li class="relative
+                                                            m-parent">
+                                            <a href="#" class="dropservice
+                                                                flex gap-2
+                                                                md:inline-flex
+                                                                items-center
+                                                                hover:bg-gray-50
+                                                                space-x-2">
+                                                <span>Category</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4
+                                                                    h-4
+                                                                    fill-current
+                                                                    pt-1" viewBox="0 0
+                                                                    24 24">
+                                                    <path d="M0
+                                                                        7.33l2.829-2.83
+                                                                        9.175
+                                                                        9.339
+                                                                        9.167-9.339
+                                                                        2.829
+                                                                        2.83-11.996
+                                                                        12.17z" />
+                                                </svg>
+                                            </a>
+                                            <ul class="m-child
+                                                                    service-child
+                                                                    hidden
+                                                                    transition
+                                                                    duration-300
+                                                                    top-full
+                                                                    left-2
+                                                                    md:w-48
+                                                                    bg-white
+                                                                    md:shadow-lg
+                                                                    md:rounded-b
+                                                                    ">
+                                                <li>
+                                                    <a href="#" class="flex
+                                                                            pl-2
+                                                                            py-3
+                                                                            hover:bg-gray-50">
+                                                        Web
+                                                        development
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="flex
+                                                                            pl-2
+                                                                            py-3
+                                                                            hover:bg-gray-50">
+                                                        Web
+                                                        Design
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="flex
+                                                                            pl-2
+                                                                            py-3
+                                                                            hover:bg-gray-50">
+                                                        Machine
+                                                        Learning
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </li>
+                                        <li class="relative
+                                                                m-parent">
+                                            <a href="#" class="dropservice2
+                                                                    flex gap-2
+                                                                    md:inline-flex
+                                                                    items-center
+                                                                    hover:bg-gray-50
+                                                                    space-x-2">
+                                                <span>Pages</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4
+                                                                        h-4
+                                                                        fill-current
+                                                                        pt-1" viewBox="0
+                                                                        0 24
+                                                                        24">
+                                                    <path d="M0
+                                                                            7.33l2.829-2.83
+                                                                            9.175
+                                                                            9.339
+                                                                            9.167-9.339
+                                                                            2.829
+                                                                            2.83-11.996
+                                                                            12.17z" />
+                                                </svg>
+                                            </a>
+                                            <ul class="m-child
+                                                                        service-child2
+                                                                        hidden
+                                                                        transition
+                                                                        duration-300
+                                                                        top-full
+                                                                        left-2
+                                                                        md:w-48
+                                                                        bg-white
+                                                                        md:shadow-lg
+                                                                        md:rounded-b
+                                                                        ">
+                                                <li>
+                                                    <a href="#" class="flex
+                                                                                pl-2
+                                                                                py-3
+                                                                                hover:bg-gray-50">
+                                                        Author
+                                                        Posts
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="flex
+                                                                                pl-2
+                                                                                py-3
+                                                                                hover:bg-gray-50">
+                                                        Search
+                                                        Result
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="flex
+                                                                                pl-2
+                                                                                py-3
+                                                                                hover:bg-gray-50">
+                                                        404
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="flex
+                                                                                pl-2
+                                                                                py-3
+                                                                                hover:bg-gray-50">
+                                                        LogIn
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="flex
+                                                                                pl-2
+                                                                                py-3
+                                                                                hover:bg-gray-50">
+                                                        SignUp
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </li>
+                                        <li>
+                                            <a href="#" class="group
+                                                                        relative
+                                                                        before:absolute
+                                                                        before:inset-x-0
+                                                                        before:bottom-0
+                                                                        before:h-2
+                                                                        before:origin-right
+                                                                        before:scale-x-0
+                                                                        before:bg-cyan-100
+                                                                        before:transition
+                                                                        before:duration-200
+                                                                        hover:before:origin-left
+                                                                        hover:before:scale-x-100">
+                                                <span class="relative
+                                                                            group-hover:text-cyan-800">Contact</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- MOBILE MENU ENDS -->
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <!-- NAVBARV ENDS -->
+
+    <section id="about-info">
+        <div class="sm:container mx-auto">
+            <div class="about-info-main w-[70%] mx-auto
+                                        text-center my-20">
+                <div class="about-head">
+                    <h2 class="mb-7 md:text-6xl text-4xl
+                                                font-extrabold bg-clip-text
+                                                bg-gradient-to-r from-cyan-400
+                                                to-blue-500 text-transparent">About Us
+                    </h2>
+                </div>
+                <div class="about-txt text-xl
+                                            font-normal ">
+                    <p>We are a team of passionate bloggers who love to write about various topics such as technology, food, travel, and lifestyle. Our goal is to share our knowledge and experiences with our readers and help them stay up-to-date with the
+                        latest trends and information.</p>
+                </div>
+                <div class="about-info-icon flex
+                                            flex-row my-8 flex-wrap
+                                            justify-center">
+                    <div class="about-items basis-full
+                                                sm:basis-6/12 lg:basis-4/12 flex
+                                                flex-row items-center
+                                                justify-center mt-3">
+                        <div class="about-item-icon
+                                                    pr-2">
+                            <i class='bx bx-headphone
+                                                        text-5xl bg-clip-text
+                                                        text-transparent
+                                                        bg-gradient-to-r
+                                                        from-cyan-400
+                                                        to-blue-500'></i>
+                        </div>
+                        <div class="about-item-txt">
+                            (48) 654-430-309<br>(01) 6532-430-309
+                        </div>
+                    </div>
+                    <div class="about-items basis-full
+                                                sm:basis-6/12 lg:basis-4/12 flex
+                                                flex-row items-center
+                                                justify-center mt-3">
+                        <div class="about-item-icon
+                                                    pr-2">
+
+                            <i class='bx
+                                                        bx-current-location
+                                                        text-5xl bg-clip-text
+                                                        text-transparent
+                                                        bg-gradient-to-r
+                                                        from-cyan-400
+                                                        to-blue-500'></i>
+                        </div>
+                        <div class="about-item-txt">
+                            sales@genz.com<br>contact@genz.com
+                        </div>
+                    </div>
+                    <div class="about-items basis-full
+                                                sm:basis-6/12 lg:basis-4/12 flex
+                                                flex-row items-center
+                                                justify-center mt-3">
+                        <div class="about-item-icon
+                                                    pr-2">
+
+                            <i class='bx bxl-telegram
+                                                        text-5xl bg-clip-text
+                                                        text-transparent
+                                                        bg-gradient-to-r
+                                                        from-cyan-400
+                                                        to-blue-500'></i>
+                        </div>
+                        <div class="about-item-txt">
+                            Colorado(CO), 80117<br>11567 E Broadview Dr
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="sm:container my-24 px-6 mx-auto">
+
+        <!-- Section: Design Block -->
+        <section class="mb-32 text-gray-800 text-center">
+            <h2 class="text-4xl font-bold mb-12">Meet the <u class="text-blue-400">team</u></h2>
+
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-6 lg:gap-x-12">
+                <div class="mb-6 lg:mb-0">
+                    <div class="bg-white block rounded-lg shadow-lg">
+                        <div class="relative overflow-hidden bg-no-repeat bg-cover">
+                            <img src="https://mdbootstrap.com/img/new/avatars/6.jpg" class="w-full rounded-t-lg hover:scale-105 duration-500 ease-in-out object-cover overflow-hidden" />
+
+                            <svg class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="left: 0; bottom: -1">
+                    <path fill="#fff"
+                      d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    </path>
+                  </svg>
+                        </div>
+                        <div class="p-6">
+                            <h5 class="text-lg font-bold mb-4">Maria Smith</h5>
+                            <p class="text-gray-500 mb-4">Frontend Developer</p>
+                            <ul class="list-inside flex mx-auto justify-center">
+                                <a href="#!" class="px-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-4 h-4 text-blue-400 hover:text-blue-500 hover:-translate-y-px duration-500 ease-in-out">
+                        <path fill="currentColor"
+                          d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                      </svg>
+                                </a>
+                                <a href="#!" class="px-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4 text-blue-400 hover:text-blue-500 hover:-translate-y-px duration-500 ease-in-out">
+                        <path fill="currentColor"
+                          d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                      </svg>
+                                </a>
+                                <a href="#!" class="px-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4 text-blue-400 hover:text-blue-500 hover:-translate-y-px duration-500 ease-in-out">
+                        <path fill="currentColor"
+                          d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                      </svg>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-6 lg:mb-0">
+                    <div class="bg-white block rounded-lg shadow-lg">
+                        <div class="relative overflow-hidden bg-no-repeat bg-cover">
+                            <img src="https://mdbootstrap.com/img/new/avatars/6.jpg" class="w-full rounded-t-lg hover:scale-105 duration-500 ease-in-out object-cover overflow-hidden" />
+
+                            <svg class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="left: 0; bottom: -1">
+                    <path fill="#fff"
+                      d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    </path>
+                  </svg>
+                        </div>
+                        <div class="p-6">
+                            <h5 class="text-lg font-bold mb-4">Maria Smith</h5>
+                            <p class="text-gray-500 mb-4">Frontend Developer</p>
+                            <ul class="list-inside flex mx-auto justify-center">
+                                <a href="#!" class="px-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-4 h-4 text-blue-400 hover:text-blue-500 hover:-translate-y-px duration-500 ease-in-out">
+                        <path fill="currentColor"
+                          d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                      </svg>
+                                </a>
+                                <a href="#!" class="px-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4 text-blue-400 hover:text-blue-500 hover:-translate-y-px duration-500 ease-in-out">
+                        <path fill="currentColor"
+                          d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                      </svg>
+                                </a>
+                                <a href="#!" class="px-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4 text-blue-400 hover:text-blue-500 hover:-translate-y-px duration-500 ease-in-out">
+                        <path fill="currentColor"
+                          d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                      </svg>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-6 lg:mb-0">
+                    <div class="bg-white block rounded-lg shadow-lg">
+                        <div class="relative overflow-hidden bg-no-repeat bg-cover">
+                            <img src="https://mdbootstrap.com/img/new/avatars/6.jpg" class="w-full rounded-t-lg hover:scale-105 duration-500 ease-in-out object-cover overflow-hidden" />
+
+                            <svg class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="left: 0; bottom: -1">
+                    <path fill="#fff"
+                      d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    </path>
+                  </svg>
+                        </div>
+                        <div class="p-6">
+                            <h5 class="text-lg font-bold mb-4">Maria Smith</h5>
+                            <p class="text-gray-500 mb-4">Frontend Developer</p>
+                            <ul class="list-inside flex mx-auto justify-center">
+                                <a href="#!" class="px-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-4 h-4 text-blue-400 hover:text-blue-500 hover:-translate-y-px duration-500 ease-in-out">
+                        <path fill="currentColor"
+                          d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                      </svg>
+                                </a>
+                                <a href="#!" class="px-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4 text-blue-400 hover:text-blue-500 hover:-translate-y-px duration-500 ease-in-out">
+                        <path fill="currentColor"
+                          d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                      </svg>
+                                </a>
+                                <a href="#!" class="px-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4 text-blue-400 hover:text-blue-500 hover:-translate-y-px duration-500 ease-in-out">
+                        <path fill="currentColor"
+                          d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                      </svg>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-6 lg:mb-0">
+                    <div class="bg-white block rounded-lg shadow-lg">
+                        <div class="relative overflow-hidden bg-no-repeat bg-cover">
+                            <img src="https://mdbootstrap.com/img/new/avatars/6.jpg" class="w-full rounded-t-lg hover:scale-105 duration-500 ease-in-out object-cover overflow-hidden" />
+
+                            <svg class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="left: 0; bottom: -1">
+                    <path fill="#fff"
+                      d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    </path>
+                  </svg>
+                        </div>
+                        <div class="p-6">
+                            <h5 class="text-lg font-bold mb-4">Maria Smith</h5>
+                            <p class="text-gray-500 mb-4">Frontend Developer</p>
+                            <ul class="list-inside flex mx-auto justify-center">
+                                <a href="#!" class="px-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-4 h-4 text-blue-400 hover:text-blue-500 hover:-translate-y-px duration-500 ease-in-out">
+                        <path fill="currentColor"
+                          d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                      </svg>
+                                </a>
+                                <a href="#!" class="px-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4 text-blue-400 hover:text-blue-500 hover:-translate-y-px duration-500 ease-in-out">
+                        <path fill="currentColor"
+                          d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                      </svg>
+                                </a>
+                                <a href="#!" class="px-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4 text-blue-400 hover:text-blue-500 hover:-translate-y-px duration-500 ease-in-out">
+                        <path fill="currentColor"
+                          d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                      </svg>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- Section: Design Block -->
+
+    </div>
+    <!-- Container for demo purpose -->
+
+
+    <!-- FOOTER START -->
+
+    <section id="footer">
+        <div class="footer-container sm:container
+                                    mx-auto">
+            <div class="footer-main px-4 md:px-32
+                                        pt-[89px] pb-[50px] rounded-t-lg
+                                        bg-white">
+                <div class="footer-menu flex flex-col
+                                            lg:flex-row mb-7">
+                    <div class="footer-item
+                                                lg:basis-4/12 px-3 basis-full ">
+                        <div class="footer-img">
+                            <img src="./assets/images/logo-day.svg" alt="">
+                        </div>
+                        <div class="logo-txt my-5
+                                                    text-sm font-normal">
+                            When an unknown prnoto sans took a galley and scrambled it to make specimen book not only five When an unknown prnoto sans took a galley and scrambled it to five centurie.
+                        </div>
+                        <div class="logo-address">
+                            <h4 class="mb-2 font-bold
+                                                        text-base">Address</h4>
+                            <p class="text-sm
+                                                        font-normal">123 Main Street <br>New York, NY 10001
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer-item
+                                                lg:basis-4/12 px-3 basis-full
+                                                lg:my-0 my-7">
+                        <div class="footer-head">
+                            <h3 class="mb-7 text-lg
+                                                        font-medium ">Categories</h3>
+                        </div>
+                        <div class="logo-sub-menu flex
+                                                    flex-row">
+                            <div class="basis-6/12 ">
+                                <ul>
+                                    <li class="mb-3 ">
+                                        <a class=" " href="#">
+                                            <p class="hover:translate-x-1.5
+                                                                        ease-in-out
+                                                                        duration-300
+                                                                        transition-all
+                                                                        w-max
+                                                                        hover:text-cyan-400">Action</p>
+                                        </a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="#">
+                                            <p class="hover:translate-x-1.5
+                                                                        ease-in-out
+                                                                        duration-300
+                                                                        transition-all
+                                                                        w-max
+                                                                        hover:text-cyan-400">Business</p>
+                                        </a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="#">
+                                            <p class="hover:translate-x-1.5
+                                                                        ease-in-out
+                                                                        duration-300
+                                                                        transition-all
+                                                                        w-max
+                                                                        hover:text-cyan-400">Adventure</p>
+                                        </a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="#">
+                                            <p class="hover:translate-x-1.5
+                                                                        ease-in-out
+                                                                        duration-300
+                                                                        transition-all
+                                                                        w-max
+                                                                        hover:text-cyan-400">Canada</p>
+                                        </a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="#">
+                                            <p class="hover:translate-x-1.5
+                                                                        ease-in-out
+                                                                        duration-300
+                                                                        transition-all
+                                                                        w-max
+                                                                        hover:text-cyan-400">Ameria</p>
+                                        </a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="#">
+                                            <p class="hover:translate-x-1.5
+                                                                        ease-in-out
+                                                                        duration-300
+                                                                        transition-all
+                                                                        w-max
+                                                                        hover:text-cyan-400">Curiosity</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="basis-6/12 ">
+                                <ul>
+                                    <li class="mb-3">
+                                        <a href="#">
+                                            <p class="hover:translate-x-1.5
+                                                                        ease-in-out
+                                                                        duration-300
+                                                                        transition-all
+                                                                        w-max
+                                                                        hover:text-cyan-400">Animal</p>
+                                        </a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="#">
+                                            <p class="hover:translate-x-1.5
+                                                                        ease-in-out
+                                                                        duration-300
+                                                                        transition-all
+                                                                        w-max
+                                                                        hover:text-cyan-400">Dental</p>
+                                        </a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="#">
+                                            <p class="hover:translate-x-1.5
+                                                                        ease-in-out
+                                                                        duration-300
+                                                                        transition-all
+                                                                        w-max
+                                                                        hover:text-cyan-400">Biology</p>
+                                        </a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="#">
+                                            <p class="hover:translate-x-1.5
+                                                                        ease-in-out
+                                                                        duration-300
+                                                                        transition-all
+                                                                        w-max
+                                                                        hover:text-cyan-400">Design</p>
+                                        </a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="#">
+                                            <p class="hover:translate-x-1.5
+                                                                        ease-in-out
+                                                                        duration-300
+                                                                        transition-all
+                                                                        w-max
+                                                                        hover:text-cyan-400">Breakfast</p>
+                                        </a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="#">
+                                            <p class="hover:translate-x-1.5
+                                                                        ease-in-out
+                                                                        duration-300
+                                                                        transition-all
+                                                                        w-max
+                                                                        hover:text-cyan-400">Dessert</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="footer-item
+                                                lg:basis-4/12 px-3 basis-full ">
+                        <div class="footer-head">
+                            <h3 class="mb-7 text-lg
+                                                        font-medium">Newsletter</h3>
+                        </div>
+                        <div class="logo-txt text-base
+                                                    font-normal mb-4">
+                            Sign up to be first to receive the latest stories inspiring us, case studies, and industry news.
+                        </div>
+                        <div class="logo-address">
+                            <form action="" method="">
+                                <div class="form-group
+                                                            mb-6">
+                                    <input class="w-full
+                                                                border-b p-3
+                                                                focus:outline-none" type="text" name="name" placeholder="Your
+                                                                name">
+                                </div>
+                                <div class="form-group
+                                                            mb-6">
+                                    <input class="w-full
+                                                                border-b p-3
+                                                                focus:outline-none" type="email" name="email" placeholder="Email
+                                                                Address">
+                                </div>
+                                <div class="form-group
+                                                            mt-4">
+                                    <button class="flex
+                                                                items-center
+                                                                justify-center
+                                                                py-2.5 px-4
+                                                                rounded
+                                                                text-white
+                                                                text-sm
+                                                                font-bold
+                                                                ease-in
+                                                                duration-300
+                                                                bg-gradient-to-r
+                                                                from-cyan-500
+                                                                to-blue-500
+                                                                hover:bg-gradient-to-bl
+                                                                transition-all
+                                                                hover:-translate-y-px
+                                                                ">Subscribe<i class='bx
+                                                                    bx-chevron-right
+                                                                    text-lg'></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom flex flex-col
+                                            md:flex-row pt-12 border-t">
+                    <div class="md:basis-1/3 basis-full
+                                                text-base font-normal
+                                                max-[767px]:text-center mb-4
+                                                md:mb-0">
+                        <p class="text-cyan-500">© Created by<a class="copyright
+                                                        text-blue-500" target="_blank" href="#"> MSThemes.com</a></p>
+                    </div>
+                    <div class="md:basis-2/3 basis-full
+                                                flex flex-row md:justify-end
+                                                justify-center flex-wrap">
+                        <a href="#" class="footer-icon
+                                                    px-3 bg-clip-text
+                                                    bg-gradient-to-r
+                                                    from-cyan-500 to-blue-500
+                                                    text-transparent
+                                                    transition-all duration-300
+                                                    ease-in
+                                                    hover:-translate-y-0.5">
+                            <div class=" flex
+                                                        items-center">
+                                <i class='bx
+                                                            bxl-linkedin-square
+                                                            text-2xl mr-2'></i>
+                                <p class="text-base">LinkedIn</p>
+                            </div>
+                        </a>
+                        <a href="#" class="footer-icon
+                                                    px-3 bg-clip-text
+                                                    bg-gradient-to-r
+                                                    from-cyan-500 to-blue-500
+                                                    text-transparent
+                                                    transition-all duration-300
+                                                    ease-in
+                                                    hover:-translate-y-0.5">
+                            <div class=" flex
+                                                        items-center">
+                                <i class='bx bxl-twitter
+                                                            text-2xl mr-2'></i>
+                                <p class="text-base">Twitter</p>
+                            </div>
+                        </a>
+                        <a href="#" class="footer-icon
+                                                    px-3 bg-clip-text
+                                                    bg-gradient-to-r
+                                                    from-cyan-500 to-blue-500
+                                                    text-transparent
+                                                    transition-all duration-300
+                                                    ease-in
+                                                    hover:-translate-y-0.5">
+                            <div class=" flex
+                                                        items-center">
+                                <i class='bx bxl-github
+                                                            text-2xl mr-2'></i>
+                                <p class="text-base">GitHub</p>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER END -->
+
+
+    <!-- SCRIPT      -->
+    <!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"></script>
+    <!-- SWIPER JS CDN -->
+    <script src="./assets/js/slick.min.js"></script>
+    <!-- SWIPER JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- BOXICON CDN -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- IONICON SCRIPTS -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- MAIN JS -->
+    <script src="./assets/js/custom.js"></script>
+</body>
+
+</html>
+
+</html>

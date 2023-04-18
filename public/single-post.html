@@ -262,22 +262,22 @@
             <div class="post-main flex lg:flex-row flex-col justify-between">
                 <div class="post-dtls lg:w-[60%] w-[100%]">
                     <div class="post-head">
-                        <h1 class="text-5xl	font-bold bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent pb-8 ">Digital Design That Will Help You Start Your Business1234</h1>
+                        <h1 class="text-5xl	font-bold bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent pb-8 ">Digital Design That Will Help You Start Your</h1>
                     </div>
                     <div class="post-user flex flex-row items-center">
-                        <div class="user-img w-[12%]">
+                        <div class="user-img w-[25%] min-[525px]:w-[15%] xl:w-[12%]">
                             <img class="h-[64px] w-[64px] rounded-full overflow-hidden object-cover" src="./assets/images/author.jpg" alt="">
                         </div>
-                        <div class="user-share flex flex-row items-center justify-between w-[88%]">
+                        <div class="user-share flex flex-col min-[525px]:flex-row items-center justify-between w-max min-[525px]:w-[85%] xl:w-[88%]">
                             <div class="user-dtls">
                                 <h4 class="font-bold">Josep Josep</h4>
                                 <small>25 April 2022 <span class="ml-2">3 mins read</span></small>
                             </div>
-                            <div class="post-share ">
-                                <p class="flex flex-row items-center font-bold">
-                                    <span class="w-[40px] h-[1px] bg-black"></span> Share
+                            <div class="post-share">
+                                <p class="flex flex-row items-center font-bold text-slate-500">
+                                    <span class="w-[10px] min-[525px]:w-[40px] h-[1px] bg-slate-400 pl-1"></span> Share
                                     <a href="#">
-                                        <i class='bx bxl-facebook text-lg mr-2 ml-4'></i>
+                                        <i class='bx bxl-facebook text-lg mr-2 ml-4 '></i>
                                     </a>
                                     <a href="#">
                                         <i class='bx bxl-linkedin text-lg mx-2'></i>
@@ -302,13 +302,13 @@
                                 nobis, amet qui, blanditiis delectus atque consequatur minus ab velit.</p>
                         </div>
                         <div class="post-bottom-img mt-10">
-                            <div class="card-img flex flex-row">
-                                <div class="card-item px-2 basis-6/12	">
+                            <div class="card-img flex sm:flex-row flex-col">
+                                <div class="card-item px-2 basis-6/12	my-4 sm:my-0">
                                     <img class="rounded overflow-hidden h-[372px] object-cover w-full" src="./assets/images/img3.jpg" alt="">
                                 </div>
                                 <div class="card-item px-2 flex flex-col justify-between basis-6/12	">
-                                    <img class="rounded overflow-hidden w-full object-cover h-[47%]" src="./assets/images/img4.jpg" alt="">
-                                    <img class="rounded overflow-hidden w-full object-cover h-[47%]" src="./assets/images/img4.jpg" alt="">
+                                    <img class="rounded overflow-hidden w-full object-cover h-[47%] my-4 sm:my-0" src="./assets/images/img4.jpg" alt="">
+                                    <img class="rounded overflow-hidden w-full object-cover h-[47%] my-4 sm:my-0" src="./assets/images/img4.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -320,18 +320,102 @@
                     </div>
 
                     <div class="post-tags py-5 border-t border-slate-500">
-                        <div class="post-tag-main flex flex-row">
-                            <div class="tag-item">
-                                <p># Nature</p>
+                        <div class="post-tag-main flex flex-row ">
+                            <div class="tag-item flex flex-row flex-wrap">
+                                <a href="#" class="px-5 py-3 text-sm rounded mx-3 bg-white font-medium ease-in-out duration-300 hover:-translate-y-px block hover:text-blue-400 my-2"># Nature</a>
+                                <a href="#" class="px-5 py-3 text-sm rounded mx-3 bg-white font-medium ease-in-out duration-300 hover:-translate-y-px block hover:text-blue-400 my-2"># Nature</a>
+                                <a href="#" class="px-5 py-3 text-sm rounded mx-3 bg-white font-medium ease-in-out duration-300 hover:-translate-y-px block hover:text-blue-400 my-2"># Nature</a>
                             </div>
-                            <div class="tag-item">
-                                <p># Nature</p>
+
+                        </div>
+                    </div>
+
+                    <div class="post-comments my-20">
+                        <div class="comment-head mb-10">
+                            <h3 class="text-3xl font-bold flex flex-row items-start gap-2">
+                                Comments
+                                <span class="text-sm px-3 py-0.5 rounded-full bg-slate-400 font-semibold">36</span>
+                            </h3>
+                        </div>
+                        <div class="comments-main border-b border-slate-300 py-4">
+                            <div class="comments-item flex sm:flex-row flex-col my-5">
+                                <div class="user flex flex-row gap-2 items-center w-full sm:w-[25%]">
+                                    <div class="user-img my-4">
+                                        <img class="w-[48px] h-[48px] rounded-full overflow-hidden " src="./assets/images/author.jpg" alt="">
+                                    </div>
+                                    <div class="user-dtls">
+                                        <h4 class="font-semibold">Josep Josep</h4>
+                                        <small>
+                                            Mar 25, 2022
+                                        </small>
+                                    </div>
+
+                                </div>
+                                <div class="comment-body w-[75%]">
+                                    <p class="p-4 rounded bg-white text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, ab! Impedit, inventore velit. Incidunt inventore nesciunt cupiditate, nam aut enim fugit debitis eaque, ea, quaerat harum tempore! Alias earum nemo iure
+                                        voluptates molestiae possimus dignissimos veritatis ad, dolore quam eveniet dolorum delectus impedit expedita inventore nulla eos culpa cupiditate accusantium.</p>
+                                </div>
                             </div>
-                            <div class="tag-item">
-                                <p># Nature</p>
+                            <div class="comments-item flex sm:flex-row flex-col my-5">
+                                <div class="user flex flex-row gap-2 items-center w-full sm:w-[25%]">
+                                    <div class="user-img my-4">
+                                        <img class="w-[48px] h-[48px] rounded-full overflow-hidden " src="./assets/images/author.jpg" alt="">
+                                    </div>
+                                    <div class="user-dtls">
+                                        <h4 class="font-semibold">Josep Josep</h4>
+                                        <small>
+                                            Mar 25, 2022
+                                        </small>
+                                    </div>
+
+                                </div>
+                                <div class="comment-body w-[75%]">
+                                    <p class="p-4 rounded bg-white text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, ab! Impedit, inventore velit. Incidunt inventore nesciunt cupiditate, nam aut enim fugit debitis eaque, ea, quaerat harum tempore! Alias earum nemo iure
+                                        voluptates molestiae possimus dignissimos veritatis ad, dolore quam eveniet dolorum delectus impedit expedita inventore nulla eos culpa cupiditate accusantium.</p>
+                                </div>
                             </div>
-                            <div class="tag-item">
-                                <p># Nature</p>
+                            <div class="comments-item flex sm:flex-row flex-col my-5">
+                                <div class="user flex flex-row gap-2 items-center w-full sm:w-[25%]">
+                                    <div class="user-img my-4">
+                                        <img class="w-[48px] h-[48px] rounded-full overflow-hidden " src="./assets/images/author.jpg" alt="">
+                                    </div>
+                                    <div class="user-dtls">
+                                        <h4 class="font-semibold">Josep Josep</h4>
+                                        <small>
+                                            Mar 25, 2022
+                                        </small>
+                                    </div>
+
+                                </div>
+                                <div class="comment-body w-[75%]">
+                                    <p class="p-4 rounded bg-white text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, ab! Impedit, inventore velit. Incidunt inventore nesciunt cupiditate, nam aut enim fugit debitis eaque, ea, quaerat harum tempore! Alias earum nemo iure
+                                        voluptates molestiae possimus dignissimos veritatis ad, dolore quam eveniet dolorum delectus impedit expedita inventore nulla eos culpa cupiditate accusantium.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="write py-6">
+                            <h3 class="text-3xl font-bold pb-3">
+                                Leave a Comment
+                            </h3>
+                            <div class="form w-full">
+                                <form action="" method="" class="flex flex-row flex-wrap w-full">
+                                    <div class="textare basis-full my-3">
+                                        <textarea class=" w-full  p-4 rounded focus:outline-none" name="comment" id="comment" rows="9" placeholder="Write Comment"></textarea>
+                                    </div>
+                                    <div class="name basis-full sm:basis-1/2 my-3 sm:pr-2 pr-0">
+                                        <input class="form-control w-full p-4 rounded focus:outline-none" name="name" id="name" type="text" placeholder="Name">
+                                    </div>
+                                    <div class="email basis-full sm:basis-1/2 my-3 sm:pl-2 pl-0">
+                                        <input class="form-control w-full p-4 rounded focus:outline-none" name="email" id="email" type="email" placeholder="Email">
+                                    </div>
+                                    <div class="website basis-full my-3">
+                                        <input class="form-control w-full p-4 rounded focus:outline-none" name="website" id="website" type="text" placeholder="Website">
+                                    </div>
+                                    <div class="form-btn mx-auto mt-3">
+                                        <button type="submit" class="button text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-bold rounded text-sm px-8 py-2.5">Post</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
