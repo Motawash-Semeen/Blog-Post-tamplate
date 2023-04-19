@@ -2,13 +2,18 @@ $(document).ready(function() {
     $(".dropservice").click(function() {
         $(".service-child").slideToggle("slow");
     });
+    $(".btn_search").click(function() {
+        $(".search-main").toggle();
+    });
 });
 $(document).ready(function() {
     $(".dropservice2").click(function() {
         $(".service-child2").slideToggle("slow");
     });
 });
+$(document).ready(function() {
 
+});
 
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
