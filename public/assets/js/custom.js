@@ -11,9 +11,7 @@ $(document).ready(function() {
         $(".service-child2").slideToggle("slow");
     });
 });
-$(document).ready(function() {
 
-});
 
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
